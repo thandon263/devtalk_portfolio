@@ -28,7 +28,7 @@ class PortfoliosController < ApplicationController
     
     def update
         @portfolio_item = Portfolio.find(params[:id])
-        
+
         respond_to do |format|
           if @portfolio_item.update(params.require(:portfolio).permit(:title, :subtitle, :body))
             format.html { redirect_to portfolios_path, notice: 'Portfolio was successfully updated.' }
@@ -38,6 +38,12 @@ class PortfoliosController < ApplicationController
             format.json { render json: @portfolio_item.errors, status: :unprocessable_entity }
           end
         end
-      end
+    end
+
+    def show
+        @portfolio_item = Portfolio.find(params[:id])
+    end
+    
+
     
 end
