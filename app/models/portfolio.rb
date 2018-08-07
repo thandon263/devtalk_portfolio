@@ -1,5 +1,12 @@
 class Portfolio < ApplicationRecord
     has_many :technologies
+    accepts_nested_attributes_for :technologies, 
+                                    reject_if: ->(attributes){ 
+                                        attributes['name'].blank? 
+                                    }, allow_destroy: true
+            # On the console when testing the application
+            # Portfolio.create!(title:"My New App", subtitle ..., technologies_attributes: [{ hashes }, { hashes }])
+                # These attributes are used to scope or nest technologies
     includes Portfolio
     validates_presence_of :title, :body, :main_image, :thumb_image
 
