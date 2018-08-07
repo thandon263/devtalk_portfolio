@@ -6,4 +6,7 @@ class Blog < ApplicationRecord
 
   extend FriendlyId
   friendly_id :title, use: :slugged
+
+  # Validations -- validating the presence of all attributes
+  validates_presence_of :title, :body 
 end
