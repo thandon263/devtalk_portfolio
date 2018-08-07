@@ -9,4 +9,7 @@ class Blog < ApplicationRecord
 
   # Validations -- validating the presence of all attributes
   validates_presence_of :title, :body 
+
+  # Relationship
+  belongs_to :topic
 end
