@@ -51,10 +51,7 @@ class PortfoliosController < ApplicationController
     end
     
     def destroy
-        @portfolio_item = Portfolio
-        .find(
-        params[:id]
-        )
+        @portfolio_item = Portfolio.find(params[:id])
 
         puts "Destroyed the Portfolio"
         @portfolio_item.destroy
