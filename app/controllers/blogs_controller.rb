@@ -6,7 +6,6 @@ class BlogsController < ApplicationController
   # GET /blogs.json
   def index
     @blogs = Blog.all
-    @topics = Topic.all
     @page_title = "My Portfolio Blog"
   end
 
@@ -19,12 +18,10 @@ class BlogsController < ApplicationController
   # GET /blogs/new
   def new
     @blog = Blog.new
-    @topics = Topic.all
   end
 
   # GET /blogs/1/edit
   def edit
-    @topics = Topic.all
   end
 
   # POST /blogs
