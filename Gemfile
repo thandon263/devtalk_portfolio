@@ -26,6 +26,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+gem 'jquery-rails'
 
 gem 'friendly_id', '~> 5.2.0', require: true # Note: You MUST use 5.0.0 or greater for Rails 4.0+
 gem 'devise', '~> 4.4', '>= 4.4.3'
