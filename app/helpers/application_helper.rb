@@ -17,5 +17,8 @@ module ApplicationHelper
       end
    end
    
+   def copyright_generator
+      DevtalkViewService::Renderer.copyright "Thando Ncube", "All Rights Reserved"
+   end
     
 end

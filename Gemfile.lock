@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/thandon263/devtalk_view_service
+  revision: a3b7823dcb4e5b4f019b27cabbdb758742653ef8
+  specs:
+    devtalk_view_service (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -109,6 +115,8 @@ GEM
     nokogiri (1.8.4)
       mini_portile2 (~> 2.3.0)
     orm_adapter (0.5.0)
+    petergate (1.8.1)
+      activerecord (> 4.0.0)
     pg (1.0.0)
     popper_js (1.14.3)
     pry (0.11.3)
@@ -206,10 +214,12 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
   devise (~> 4.4, >= 4.4.3)
+  devtalk_view_service!
   friendly_id (~> 5.2.0)
   jbuilder (~> 2.5)
   jquery-rails
   listen (>= 3.0.5, < 3.2)
+  petergate (~> 1.6, >= 1.6.3)
   pg (>= 0.18, < 2.0)
   pry-byebug
   puma (~> 3.11)

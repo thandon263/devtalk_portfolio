@@ -27,6 +27,7 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'jquery-rails'
+gem 'petergate', '~> 1.6', '>= 1.6.3'
 
 gem 'friendly_id', '~> 5.2.0', require: true # Note: You MUST use 5.0.0 or greater for Rails 4.0+
 gem 'devise', '~> 4.4', '>= 4.4.3'
@@ -58,3 +59,4 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'devtalk_view_service', git: 'https://github.com/thandon263/devtalk_view_service'
