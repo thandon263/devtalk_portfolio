@@ -115,3 +115,29 @@ body {
 .mastfoot {
   color: rgba(255, 255, 255, .5);
 }
+
+/**
+* Custom Styles
+*/
+
+.card {
+  padding: 20px;
+}
+.card-block {
+  color: black;
+}
+
+.auth-links {
+  margin: 10px 0;
+  text-align: center;
+}
+.auth-links a {
+  color: #333;
+}
+
+.login > .card {
+  width: 22rem;
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px;
+}
