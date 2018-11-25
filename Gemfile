@@ -38,6 +38,9 @@ gem 'bootstrap', '~> 4.0.0'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.4'
+
+gem 'kaminari', '~> 1.1', '>= 1.1.1'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 

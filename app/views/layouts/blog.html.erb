@@ -34,16 +34,8 @@
 
       <%= render 'shared/blog_nav' %>
 
-      <%# Start of heading %>
-      <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
-        <div class="col-md-9 px-0">
-          <h1 class="display-4 font-italic">Welcome To Dev360 Blog Introduction</h1>
-          <p class="lead my-3">We crave the new. We fear the new. But most of all, we need the new. There's even a word for it: neophilia. With the social and technological change creating competing visions of the future.</p>
-          <p class="lead mb-0"><%= link_to "Write a New Blog Post...", new_blog_url if logged_in?(:site_admin) %></p>
-        </div>
-      </div>
-      <%# End of heading %>
-
+      <%= render 'shared/blog_mastHead' %>
+      
       <%# Start of container and row element %>
         <main role="main" class="container">
           <div class="row">
@@ -55,16 +47,7 @@
 
           </div>
 
-      <%# Start of Footer %>
-             <footer class="blog-footer">
-                <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-                <p>
-                  <a href="#">Back to top</a>
-                </p>
-              </footer>
-      <%# End of footer %>
-
-            <%= render "shared/nav", location: "bottom" %>
+          <%= render 'shared/blog_footer'%>
             
             <%= source_helper("blog") %>
         </main>
