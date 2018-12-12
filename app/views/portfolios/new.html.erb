@@ -1,3 +1,6 @@
-<h1>Create A New Portfolio</h1>
+<div class="container portfolio-form">
+    <h1>Create A New Portfolio</h1>
 
-<%= render 'form', portfolio_item: @portfolio_item if logged_in?(:site_admin) %>
+    <%= render 'form', portfolio_item: @portfolio_item if logged_in?(:site_admin) %>
+</div>
+

@@ -20,7 +20,7 @@
   <!-- End of Navigation -->
 
   <!-- Start of Mast Head -->
-     <%= render 'shared/portfolio_masthead' %>
+     <%= render 'shared/portfolio_masthead' unless logged_in?(:site_admin) %>
   <!-- End of Mast Head -->
 
     <%= yield %>

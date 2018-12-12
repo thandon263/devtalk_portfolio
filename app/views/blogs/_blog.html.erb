@@ -8,7 +8,8 @@
     </p>
      
     <p>
-        <%= blog.body %>
+        <%= truncate blog.body, length: 250 %>
+        <%= link_to 'read more', blog %>
     </p>
   </div><!-- /.blog-post -->
 
