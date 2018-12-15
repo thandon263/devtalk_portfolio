@@ -1,0 +1,25 @@
+language: ruby
+rvm:
+  - 2.5.1
+  - 2.3.1
+  - 2.2.2
+env:
+  - DB=postgresql
+services:
+  - postgresql
+before_deploy: "echo 'ready?'"
+stage: deploy to production
+script: 
+  - bundle exec rake
+  - bundle install
+before_script:
+  - cp config/database.yml.travis config/database.yml
+  - RAILS_ENV=production bundle exec rake db:create
+  - bundle exec rake db:migrate
+  - bundle install
+deploy: &heroku
+  provider: heroku
+  app: devtalk_portfolio
+  api_key: $HEROKU_AUTH_TOKEN
+notifications:
+  email: false
