@@ -17,9 +17,5 @@ before_script:
   - RAILS_ENV=production bundle exec rake db:create
   - bundle exec rake db:migrate
   - bundle install
-deploy: &heroku
-  provider: heroku
-  app: devtalk_portfolio
-  api_key: $HEROKU_AUTH_TOKEN
 notifications:
   email: false
