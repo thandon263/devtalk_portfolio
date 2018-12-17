@@ -6,7 +6,7 @@
             <hr>
         </div>
 
-        <div class="row <%= "sortable" unless not logged_in?(:site_admin) %>">
+        <div class="row">
             <%= render partial: 'portfolio_item', collection: @portfolio_items %>
         </div>
     </div>
