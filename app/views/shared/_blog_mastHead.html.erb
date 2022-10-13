@@ -1,0 +1,9 @@
+<%# Start of heading %>
+      <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+        <div class="col-md-9 px-0">
+          <h1 class="display-4 font-italic">Welcome To Dev360 Blog Introduction</h1>
+          <p class="lead my-3">We crave the new. We fear the new. But most of all, we need the new. There's even a word for it: neophilia. With the social and technological change creating competing visions of the future.</p>
+          <p class="lead mb-0"><%= link_to "Write a New Blog Post", new_blog_url if logged_in?(:site_admin) %></p>
+        </div>
+      </div>
+      <%# End of heading %>

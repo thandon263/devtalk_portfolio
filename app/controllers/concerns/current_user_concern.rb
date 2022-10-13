@@ -1,0 +1,15 @@
+module CurrentUserConcern
+    extend ActiveSupport::Concern
+    # Implementing the null object pattern
+    def current_user
+        super || guest_user
+    end
+
+    def guest_user
+      guest = GuestUser.new
+      guest.name = "Guest User",
+      guest.first_name = "Guest",
+      guest.last_name = "guestuser@email.com"
+      guest
+    end
+end
